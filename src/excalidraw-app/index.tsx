@@ -619,26 +619,15 @@ const ExcalidrawWrapper = () => {
         UIOptions={{
           canvasActions: {
             toggleTheme: true,
-            export: {
-              onExportToBackend,
-              renderCustomUI: (elements, appState, files) => {
-                return (
-                  <ExportToExcalidrawPlus
-                    elements={elements}
-                    appState={appState}
-                    files={files}
-                    onError={(error) => {
-                      excalidrawAPI?.updateScene({
-                        appState: {
-                          errorMessage: error.message,
-                        },
-                      });
-                    }}
-                  />
-                );
-              },
-            },
+            export: false,
+            changeViewBackgroundColor: true,
+            clearCanvas: true,
+            loadScene: false,
+            saveToActiveFile: false,
+            saveAsImage: false,
           },
+          // dockedSidebarBreakpoint: number,
+          welcomeScreen: true,
         }}
         langCode={langCode}
         renderCustomStats={renderCustomStats}
