@@ -37,7 +37,6 @@ export const AppWelcomeScreen: React.FC<{
         {t("welcomeScreen.app.menuHint")}
       </WelcomeScreen.Hints.MenuHint>
       <WelcomeScreen.Hints.ToolbarHint />
-      <WelcomeScreen.Hints.HelpHint />
       <WelcomeScreen.Center>
         <WelcomeScreen.Center.Logo />
         <WelcomeScreen.Center.Heading>
