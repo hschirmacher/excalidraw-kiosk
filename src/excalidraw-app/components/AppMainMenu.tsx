@@ -9,26 +9,7 @@ export const AppMainMenu: React.FC<{
 }> = React.memo((props) => {
   return (
     <MainMenu>
-      <MainMenu.DefaultItems.LoadScene />
-      <MainMenu.DefaultItems.SaveToActiveFile />
-      <MainMenu.DefaultItems.Export />
-      <MainMenu.DefaultItems.SaveAsImage />
-      <MainMenu.DefaultItems.LiveCollaborationTrigger
-        isCollaborating={props.isCollaborating}
-        onSelect={() => props.setCollabDialogShown(true)}
-      />
-
-      <MainMenu.DefaultItems.Help />
-      <MainMenu.DefaultItems.ClearCanvas />
-      <MainMenu.Separator />
-      <MainMenu.ItemLink
-        icon={PlusPromoIcon}
-        href="https://plus.excalidraw.com/plus?utm_source=excalidraw&utm_medium=app&utm_content=hamburger"
-        className="ExcalidrawPlus"
-      >
-        Excalidraw+
-      </MainMenu.ItemLink>
-      <MainMenu.DefaultItems.Socials />
+      <MainMenu.DefaultItems.ClearCanvas /> 
       <MainMenu.Separator />
       <MainMenu.DefaultItems.ToggleTheme />
       <MainMenu.ItemCustom>
@@ -38,3 +19,6 @@ export const AppMainMenu: React.FC<{
     </MainMenu>
   );
 });
+
+// items we may want to re-introduce lateron
+// <MainMenu.DefaultItems.Help />
