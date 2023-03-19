@@ -13,9 +13,10 @@ export const AppFooter = React.memo(() => {
           alignItems: "center",
         }}
       >
-        <ExcalidrawPlusAppLink />
-        <EncryptedIcon />
       </div>
     </Footer>
   );
 });
+
+//         <ExcalidrawPlusAppLink />
+//         <EncryptedIcon />
