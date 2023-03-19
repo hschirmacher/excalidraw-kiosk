@@ -43,23 +43,26 @@ export const AppWelcomeScreen: React.FC<{
         <WelcomeScreen.Center.Heading>
           {headingContent}
         </WelcomeScreen.Center.Heading>
-        <WelcomeScreen.Center.Menu>
-          <WelcomeScreen.Center.MenuItemLoadScene />
-          <WelcomeScreen.Center.MenuItemHelp />
-          <WelcomeScreen.Center.MenuItemLiveCollaborationTrigger
-            onSelect={() => props.setCollabDialogShown(true)}
-          />
-          {!isExcalidrawPlusSignedUser && (
-            <WelcomeScreen.Center.MenuItemLink
-              href="https://plus.excalidraw.com/plus?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenGuest"
-              shortcut={null}
-              icon={PlusPromoIcon}
-            >
-              Try Excalidraw Plus!
-            </WelcomeScreen.Center.MenuItemLink>
-          )}
-        </WelcomeScreen.Center.Menu>
       </WelcomeScreen.Center>
     </WelcomeScreen>
   );
 });
+
+
+// removed center menu from welcome screen
+// <WelcomeScreen.Center.Menu>
+// <WelcomeScreen.Center.MenuItemLoadScene />
+// <WelcomeScreen.Center.MenuItemHelp />
+// <WelcomeScreen.Center.MenuItemLiveCollaborationTrigger
+//   onSelect={() => props.setCollabDialogShown(true)}
+// />
+// {!isExcalidrawPlusSignedUser && (
+//   <WelcomeScreen.Center.MenuItemLink
+//     href="https://plus.excalidraw.com/plus?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenGuest"
+//     shortcut={null}
+//     icon={PlusPromoIcon}
+//   >
+//     Try Excalidraw Plus!
+//   </WelcomeScreen.Center.MenuItemLink>
+// )}
+// </WelcomeScreen.Center.Menu>
