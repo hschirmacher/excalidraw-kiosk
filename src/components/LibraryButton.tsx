@@ -21,6 +21,9 @@ export const LibraryButton: React.FC<{
     return null;
   }
 
+  // no library button please
+  return null;
+
   return (
     <label title={`${capitalizeString(t("toolBar.library"))}`}>
       <input
