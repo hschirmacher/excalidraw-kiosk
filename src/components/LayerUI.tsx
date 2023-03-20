@@ -259,12 +259,14 @@ const LayerUI = ({
                         "zen-mode": appState.zenModeEnabled,
                       })}
                     >
+                      
                       <Island
                         padding={1}
                         className={clsx("App-toolbar", {
                           "zen-mode": appState.zenModeEnabled,
                         })}
                       >
+                        
                         <HintViewer
                           appState={appState}
                           elements={elements}
@@ -314,20 +316,6 @@ const LayerUI = ({
               )}
             </Section>
           )}
-          <div
-            className={clsx(
-              "layer-ui__wrapper__top-right zen-mode-transition",
-              {
-                "transition-right": appState.zenModeEnabled,
-              },
-            )}
-          >
-            <UserList collaborators={appState.collaborators} />
-            {renderTopRightUI?.(device.isMobile, appState)}
-            {!appState.viewModeEnabled && (
-              <LibraryButton appState={appState} setAppState={setAppState} />
-            )}
-          </div>
         </div>
       </FixedSideContainer>
     );

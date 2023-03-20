@@ -28,7 +28,7 @@ export const AppWelcomeScreen: React.FC<{
         return bit;
       });
   } else {
-    headingContent = t("welcomeScreen.app.center_heading");
+    headingContent = "Minimal Whiteboard Edition for B323 / BHT";
   }
 
   return (
