@@ -69,7 +69,7 @@ export const SHAPES = [
     numericKey: null, // KEYS["8"],
     fillable: false,
   },
-  {
+ {
     icon: ImageIcon,
     value: "image",
     key: null,
