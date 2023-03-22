@@ -4,6 +4,8 @@ rem wait 5 sec
 rem timeout /T 5 
 rem cd %HOMEPATH%
 rem cd excalidraw-kiosk
+echo starting excalidraw-kiosk and chrome...
+cd C:\Users\cgm\medienpult\excalidraw-kiosk
 start yarn start
 start /d "C:\Program Files (x86)\Google\Chrome\Application" chrome.exe -kiosk http://localhost:3000 -overscroll-history-navigation=0
 exit
